@@ -1,0 +1,19 @@
+header {
+  padding: 10px;
+  margin: 20px auto 80px;
+  border: 2px solid #90a955;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  max-width: 450px;
+}
+
+.footer-fixed {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: aliceblue;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+}
