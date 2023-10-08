@@ -19,3 +19,20 @@
   top: -8px;
   right: 10px;
 }
+
+.question-card__tags {
+  display: flex;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+
+.question-card__hashtag {
+  padding: 5px;
+  border: 1px solid black;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-size: small;
+  color: black;
+  background-color: lightgray;
+}
