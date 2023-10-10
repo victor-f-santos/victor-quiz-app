@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/Components/button.css" />
     <link rel="stylesheet" href="/Components/card.css" />
     <link rel="stylesheet" href="/Components/global.css" />
+    <script src="./JS/index.js" defer></script>
   </head>
   <body>
     <header>
@@ -19,11 +19,12 @@
           src="./img/bookmark.png"
           alt="Bookmark transparent"
           class="question-card__bookmark"
+          data-js="toggle-bookmark"
         />
         <h2>Question 1</h2>
         <p>How many planets are there currently in our solar system?</p>
         <p class="question-card__button">Answer</p>
-        <p class="question-card__answer" hidden>8</p>
+        <p class="question-card__answer hidden">8</p>
         <div class="question-card__tags">
           <p class="question-card__hashtag">#curiosity</p>
           <p class="question-card__hashtag">#astronomy</p>
@@ -43,7 +44,7 @@
         <p class="question-card__button">Answer</p>
         <p class="question-card__answer" hidden>Metallica</p>
         <div class="question-card__tags">
-          <p class="question-card__hashtag">#heavymetal</p class="question-card__hashtag">
+          <p class="question-card__hashtag">#heavymetal</p>
           <p class="question-card__hashtag">#music</p>
           <p class="question-card__hashtag">#80ies</p>
         </div>

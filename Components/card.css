@@ -36,3 +36,24 @@
   color: black;
   background-color: lightgray;
 }
+
+.question-card__button {
+  border: 1px solid #90a955;
+  border-radius: 50px;
+  min-width: 150px;
+  padding: 5px 0;
+  background: radial-gradient(
+    circle,
+    rgba(49, 255, 31, 1) 0%,
+    rgba(183, 255, 187, 1) 100%
+  );
+}
+
+.question-card__answer {
+  font-size: 20px;
+  text-shadow: 1px 1px 4px #1d5200;
+}
+
+.hidden {
+  display: none;
+}
