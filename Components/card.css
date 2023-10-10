@@ -54,6 +54,6 @@
   text-shadow: 1px 1px 4px #1d5200;
 }
 
-.hidden {
+.question-card__hidden {
   display: none;
 }
