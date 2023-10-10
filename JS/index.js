@@ -12,10 +12,9 @@ const answer = document.querySelector('[data-js="answer"]');
 
 button.addEventListener("click", () => {
   answer.classList.toggle("question-card__hidden");
-  //   button.textContent = "Hide answer";
 
   if (button.textContent === "Hide Answer") {
-    button.textContent = "Answer";
+    button.textContent = "Show Answer";
   } else {
     button.textContent = "Hide Answer";
   }
