@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/Components/card.css" />
     <link rel="stylesheet" href="/Components/global.css" />
-    <script src="./JS/index.js" defer></script>
+    <link rel="stylesheet" href="/Components/form.css" />
+    <script src="./JS/form.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Quiz App</h1>
     </header>
     <main>
-      <form action="">
+      <form data-js="form" action="" class="form">
         <label for="your-question">Your question:</label>
         <textarea
           name="your-question"
@@ -32,9 +33,11 @@
         ></textarea>
 
         <label for="hashtag">Hashtag:</label>
-        <input type="text" />
+        <input type="text" id="hashtag" />
       </form>
-      <button type="submit">Submit</button>
+      <section class="submit-button">
+        <button type="submit">Submit</button>
+      </section>
     </main>
     <footer>
       <nav class="footer-fixed">
