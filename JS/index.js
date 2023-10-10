@@ -6,3 +6,17 @@ bookmark.addEventListener("click", (event) => {
     event.target.src = "img/bookmark_filled.png";
   }
 });
+
+const button = document.querySelector('[data-js="button"]');
+const answer = document.querySelector('[data-js="answer"]');
+
+button.addEventListener("click", () => {
+  answer.classList.toggle("question-card__hidden");
+  //   button.textContent = "Hide answer";
+
+  if (button.textContent === "Hide Answer") {
+    button.textContent = "Answer";
+  } else {
+    button.textContent = "Hide Answer";
+  }
+});
