@@ -4,9 +4,18 @@ const counter = document.getElementById("your-answer");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
+
+  const card = document.createElement("section");
+  const bookmark = document.createElement("img");
+
+  card.classList.add("question-card");
+
+  document.body.append(card, bookmark);
 });
 
 message.addEventListener("input", function () {
   const messageLenght = message.value.lenght;
-  counter.textContent = `${messageLenght} characters left`;
+  // counter.textContent = `${messageLenght} characters left`;
 });
