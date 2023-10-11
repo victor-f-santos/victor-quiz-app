@@ -8,8 +8,11 @@ form.addEventListener("submit", (event) => {
   const data = Object.fromEntries(formData);
 
   const card = document.createElement("section");
-  const bookmark = document.createElement("img");
 
+  const questionHeading = document.createElement("p");
+  questionHeading.textContent = data["your-question"];
+
+  card.append(questionHeading);
   card.classList.add("question-card");
 
   document.body.append(card, bookmark);
