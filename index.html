@@ -5,93 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/Components/card.css" />
+    <link rel="stylesheet" href="/Components/global.css" />
+    <script src="./JS/index.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Quiz App</h1>
     </header>
-    <main class="hero">
+    <main class="cards-page">
       <section class="question-card">
         <img
           src="./img/bookmark.png"
           alt="Bookmark transparent"
-          class="bookmark"
+          class="question-card__bookmark"
+          data-js="toggle-bookmark"
+          id="bookmark-image"
         />
         <h2>Question 1</h2>
         <p>How many planets are there currently in our solar system?</p>
-        <p class="button">Answer</p>
-        <p class="answer" hidden>8</p>
+        <button class="question-card__button" data-js="button">
+          Show Answer
+        </button>
+        <p class="question-card__answer question-card__hidden" data-js="answer">
+          8
+        </p>
+        <div class="question-card__tags">
+          <p class="question-card__hashtag">#curiosity</p>
+          <p class="question-card__hashtag">#astronomy</p>
+          <p class="question-card__hashtag">#solarsystem</p>
+        </div>
       </section>
       <section class="question-card">
         <img
           src="./img/bookmark.png"
           alt="Bookmark transparent"
-          class="bookmark"
+          class="question-card__bookmark"
         />
         <h2>Question 2</h2>
         <p>
           "Master of Puppets" is an album played and recorded by which band?
         </p>
-        <p class="button">Answer</p>
-        <p class="answer" hidden>Metallica</p>
+        <button class="question-card__button">Show Answer</button>
+        <p class="question-card__answer" hidden>Metallica</p>
+        <div class="question-card__tags">
+          <p class="question-card__hashtag">#heavymetal</p>
+          <p class="question-card__hashtag">#music</p>
+          <p class="question-card__hashtag">#80ies</p>
+        </div>
       </section>
       <section class="question-card">
         <img
           src="img/bookmark_filled.png"
           alt="bookmark filled"
-          class="bookmark"
+          class="question-card__bookmark"
         />
         <h2>Question 3</h2>
         <p>How many different time zones does Russia have?</p>
-        <p class="button">Answer</p>
-        <p class="answer" hidden>11</p>
+        <button class="question-card__button">Show Answer</button>
+        <p class="question-card__answer" hidden>11</p>
+        <div class="question-card__tags">
+          <p class="question-card__hashtag">#stopwars</p>
+          <p class="question-card__hashtag">#curiosity</p>
+          <p class="question-card__hashtag">#timezones</p>
+        </div>
       </section>
       <section class="question-card">
         <img
           src="./img/bookmark.png"
           alt="Bookmark transparent"
-          class="bookmark"
+          class="question-card__bookmark"
         />
         <h2>Question 4</h2>
         <p>What does DNA stand for?</p>
-        <p class="button">Answer</p>
-        <p class="answer" hidden>Deoxyribonucleic acid</p>
+        <button class="question-card__button">Show Answer</button>
+        <p class="question-card__answer" hidden>Deoxyribonucleic acid</p>
+        <div class="question-card__tags">
+          <p class="question-card__hashtag">#biology</p>
+          <p class="question-card__hashtag">#curiosity</p>
+          <p class="question-card__hashtag">#nature</p>
+        </div>
       </section>
       <section class="question-card">
         <img
           src="img/bookmark_filled.png"
           alt="bookmark filled"
-          class="bookmark"
+          class="question-card__bookmark"
         />
         <h2>Question 5</h2>
         <p>
           Which of the bands is the best of all time, Rolling Stones or the
           Beatles?
         </p>
-        <p class="button">Answer</p>
-        <p class="answer" hidden>Queen, of course!</p>
+        <button class="question-card__button">Show Answer</button>
+        <p class="question-card__answer" hidden>Queen, of course!</p>
+        <div class="question-card__tags">
+          <p class="question-card__hashtag">#music</p>
+          <p class="question-card__hashtag">#rock</p>
+          <p class="question-card__hashtag">#classic</p>
+        </div>
       </section>
       <section class="question-card">
         <img
           src="img/bookmark_filled.png"
           alt="bookmark filled"
-          class="bookmark"
+          class="question-card__bookmark"
         />
         <h2>Question 6</h2>
         <p>What's the light distance between the earth and the sun?</p>
-        <p class="button">Answer</p>
-        <p class="answer" hidden>About 8.3 light minutes</p>
+        <button class="question-card__button">Show Answer</button>
+        <p class="question-card__answer" hidden>About 8.1 light minutes</p>
+        <div class="question-card__tags">
+          <p class="question-card__hashtag">#astronomy</p>
+          <p class="question-card__hashtag">#curiosity</p>
+          <p class="question-card__hashtag">#solarsystem</p>
+        </div>
       </section>
       <section class="question-card">
         <img
           src="./img/bookmark_filled.png"
           alt="Bookmark transparent"
-          class="bookmark"
+          class="question-card__bookmark"
         />
         <h2>Question 7</h2>
         <p>How many weeks until I go crazy?</p>
-        <p class="button">Answer</p>
-        <p class="answer" hidden>3 weeks tops</p>
+        <button class="question-card__button">Show Answer</button>
+        <p class="question-card__answer" hidden>3 weeks tops</p>
+        <div class="question-card__tags">
+          <p class="question-card__hashtag">#spiced</p>
+          <p class="question-card__hashtag">#bootcamp</p>
+          <p class="question-card__hashtag">#pleasegodhelpme</p>
+        </div>
       </section>
     </main>
     <footer>
@@ -101,6 +145,9 @@
         </a>
         <a href="bookmarks.html">
           <img src="./img/bookmark_transparent.png" alt="Bookmark image" />
+        </a>
+        <a href="form.html">
+          <img src="./img/images.png" alt="Plus sign" />
         </a>
         <a href="profile.html">
           <img src="./img/profile.png" alt="Profile image" />

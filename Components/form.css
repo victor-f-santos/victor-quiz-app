@@ -1,0 +1,19 @@
+.form {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  margin: 0 150px;
+  /* gap: 2rem; */
+}
+
+#your-question,
+#your-answer,
+#hashtag {
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px black;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
